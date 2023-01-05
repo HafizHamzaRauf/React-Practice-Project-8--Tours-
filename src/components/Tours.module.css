@@ -1,0 +1,19 @@
+.tours {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 8rem;
+  align-items: flex-start;
+  justify-items: center;
+}
+@media (max-width: 700px) {
+  .tours {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .tours {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
